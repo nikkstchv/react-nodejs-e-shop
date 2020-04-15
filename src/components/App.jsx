@@ -20,7 +20,7 @@ class App extends Component {
       <Container>
         <Menu />
         <Filter />
-        <Card.Group itemsPerRow={4}>
+        <Card.Group itemsPerRow={5}>
           {!isReady
             ? "Загрузка..."
             : books.map((book, i) => <BookCard key={i} {...book} />)}
